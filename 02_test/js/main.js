@@ -1,0 +1,1 @@
+console.log('Ivory'); // 콘솔 창에 log (기록)을 남기겠다. 
