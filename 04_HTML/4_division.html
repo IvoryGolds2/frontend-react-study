@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- division(블록): 특별한 의미는 없고 요소들을 묶어 하나의 영역으로 구분 -->
+  <div>
+    <h1>오늘의 날씨</h1>
+    <p>중부 집중호우, 남부는 열대야, 12호 태풍 북상중..</p>
+    <img src="https://img.sbs.co.kr/newimg/news/20170802/201077919_1280.jpg" alt="12호태풍">
+  </div>
+
+  <!-- heading(블록요소):헤드라인(제목)을 의미, 1~6까지 있고 숫자가 작을수록 더 중요한 제목(크기가 커짐) -->
+  <!-- 제목의 크기가 몇 px인가는 중요하지 않음, 그 역할과 의미가 중요 
+  어차피 reset.css를 사용하면 크기가 다 동일하게 초기화됨 그러니까 필요에 따라 css를 사용하여 크기를 지정하면 됨 -->
+  <h1>제목</h1>
+  <h2>제목</h2>
+  <h3>제목</h3>
+  <h4>제목</h4>
+  <h5>제목</h5>
+  <h6>제목</h6>
+
+  <!-- Paragraph(블록요소):문단, 단락을 의미 -->
+  <!-- lorem ipsum (줄여서 립숨): 샘플 텍스트 생성 -->
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto culpa saepe nam fugiat dignissimos esse mollitia distinctio recusandae atque facere nemo sint natus aperiam molestiae, numquam dolores? Minus, praesentium adipisci!</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aut eaque magni blanditiis modi, molestias nisi atque qui? Neque eum earum illum veritatis nisi atque a maiores consequuntur qui itaque.</p>
+  <!-- p태그 대신 div를 써도 되긴 하지만 p태그를 사용하면 안에 내용을 보지 않아도 우리(브라우저 포함)은 문단을 나타냄을 알 수 있음 -->
+  <!-- HTML은 항상 상황에 맞게 의미있는 태그를 쓰는 것이 좋다 -->
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur illo tempore non expedita excepturi delectus. Aperiam, blanditiis sit! Sapiente incidunt rem quia totam quibusdam. Ipsa odio quis blanditiis quod?</div>
+
+  <!-- image(인라인요소): 이미지 삽입 -->
+  <div><img src="http://via.placeholder.com/350x250.png/FF66FF/FFFFFF?text+Logo+Image" alt="로고"></div>
+  <img src="http://via.placeholder.com/350x250.png/00FFFF/FFFFFF?text+Logo+Image" alt="로고">
+</body>
+</html>
