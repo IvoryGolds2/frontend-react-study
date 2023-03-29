@@ -38,14 +38,25 @@
   이미지 경로가 잘못되었거나 네트워크가 불안정해서 이미지를 불러오지 못하는 경우
   이럴 경우 이미지 대신 화면에 나올 글자(ex.시각장애인 스크리리더) -->
   <!-- 상대경로 -->
-  <img src="./images/logo.png" alt="로고">
-  <img src="images/logo.png" alt="로고">
+  <div><img src="./images/logo.png" alt="로고"></div>
+  <div><img src="images/logo.png" alt="로고"></div>
 
   <!-- 절대경로 -->
-  <img src="https://heropy.blog/css/images/logo.png" alt="로고">
-  <img src="/02_tset/images/logo.png" alt="로고">
+  <div><img src="https://heropy.blog/css/images/logo.png" alt="로고"></div>
+  <div><img src="/02_test/images/logo.png" alt="로고"></div>
 
   <div class="logo"></div>
+
+  <!-- 페이지를 나누고 연결(링크) 하기 -->
+  <!-- herf(Hypertext Reference) 다른 페이지르 이동할 수 있는 참조가 되는 경로를 입력하는 속성 -->
+  <a href="http://www.naver.com">NAVER</a>
+
+  <!-- index.html로 만들면 생략 가능 -->
+  <a href="/02_test/about">About</a>
+
+  <!-- 로그인 페이지 만들어서 연결 -->
+  <a href="/02_test/login/">login</a>
+
 
 </body>
 </html>

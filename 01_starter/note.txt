@@ -85,4 +85,4 @@ git merge는 그걸 merge(병합)하라는 뜻
   11) 편집기 분할: ctrl + \ 또는 ctrl + alt + left/right
   12) 다중 선택: ctrl + d 또는 ctrl + alt + up/down 또는 alt + 마우스 클릭/드래그
   13) 라인 삭제: ctrl + shift + k
--->
+  주석 단축키 컨트롤 슬래시(html, css, js 모두)-->
