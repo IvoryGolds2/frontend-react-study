@@ -20,12 +20,7 @@ header ul.main-menu {
   border: 2px solid red;
 }
 
-
-
 /* 5. 62~77 라인의 <ul>태그에서 3번째 <li>을 선택하는 선택자를 작성(가상 클래스 선택자 필수) */
-.header :nth-child(3) {
-  border: 2px solid red;
-}
 #detail_list > ul:nth-child(4) > li:nth-child(3) {
   border: 2px solid red;
 }
