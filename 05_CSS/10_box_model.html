@@ -73,6 +73,55 @@
       padding: 10px 20px 30px 40px;
       /* padding-left: 20px; */
     }
+    .container-3 .item {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .container-3 .item:nth-child(1) {
+      /* padding과 같이 요소의 크기가 커짐 */
+      /* 실선 */
+      /* border: 10px solid; */
+      /* 지정된 색상 값이 없으면 요소의 글꼴 색상이 적용됨(보통 명확하게 지정해서 씀) */
+      border: 10px solid #b7f7b7;
+    }
+    .container-3 .item:nth-child(2) {
+      /* 파선 */
+      border: 10px dashed #fd87af;
+    }
+    .container-3 .item:nth-child(3) {
+      /* 점선 */
+      /* border: 10px dotted rgb(188, 188, 250); */
+      border: 10px dotted rgba(21, 21, 252, 0.301);
+    }
+    .container-4 {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      margin: 20px;
+      border-radius: 50%;
+      /* 원 만들고 싶을 때는 보통 50퍼센트로 준다 */
+    }
+
+    .container-5 {
+      width: 100px;
+      height: 100px;
+      background-color: pink; 
+    }
+    .container-5.compare {
+      /* border로 인해 요소의 크기 10px 증가 */
+      border: 5px solid rgb(252, 74, 74);
+      padding: 20px;
+      /* 요소의 크기는 150 x 150 으로 늘어남
+        만약 요소의 가로/세로 길이를 100px로 유지하고 싶다면 늘어난 50px만큼 빼줘야 함(번거로움)
+      */
+
+      /* 가로, 세로 계산에 padding과 border 값도 포함해서 자동으로 content 영역이 줄어듦 */
+      /* 요소에 padding과 border 값이 추가될 때 지정한 크기보다 커지는 것을 방지 */
+      box-sizing: border-box;
+    }
+
   </style>
 </head>
 <body>
@@ -115,6 +164,21 @@
       <div class="item"></div>
       <div class="item"></div>
     </div>
+
+    <h4>border 실습</h4>
+    <div class="container-3">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <h4>border-radius 실습</h4>
+    <div class="container-4"></div>
+
+    <h4>box-sizing 실습</h4>
+    <div class="container-5 compare">hello</div>
+    <div class="container-5">hello</div>
+
     
 </body>
 </html>
