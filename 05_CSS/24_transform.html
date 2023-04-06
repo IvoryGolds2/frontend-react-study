@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .container-1 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(130, 154, 226);
+    }
+    .container-1 .item-1 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(250, 209, 134);
+
+      /* 요소를 변환시키는 속성: 변환함수(); */
+      /* transform: rotate(45deg); */
+      transform: rotate(45deg) scale(1.3);
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(76, 235, 182);
+    }
+    .translate {
+      /* transform: translate(20px, 20px); */
+      transform: translateX(20px); 
+      transform: translateY(20px);
+    }
+
+    .scale {
+      transform: scale(0.7);
+      transition: 1s;
+      /* 숫자 바꿔보면 됨 */
+      /* 트렌지션 호버에 있으면 안됨 */
+    }
+    .scale:hover {
+      transform: scale(1.2);
+    }
+
+    .rotate {
+      /* transform: rotate(45deg); */
+      /* deg 붙여야됨 */
+      /* transform: perspective(300px) rotateX(45deg); */
+      /* perspective가 앞에 붙어야됨 */
+      transform: perspective(300px) rotateY(45deg);
+      transition: 1s;
+    }
+
+    .skew {
+      /* transform: skewX(200deg); */
+      /* 양수를 넣으면 왼쪽으로 기울어용 오른쪽으로 기울이고 싶으면 음수를 넣어라 */
+      transform: skewY(200deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>transform(변환)</h1>
+  <div class="container-1">
+    <div class="item-1">Hello World!</div>
+  </div>
+
+  <h2>translate:</h2>
+  <div class="translate">Hello world!</div>
+
+  <h2>scale:</h2>
+  <div class="scale">Hello world!</div>
+
+  <h2>rotate:</h2>
+  <div class="rotate">Hello world!</div>
+
+  <h2>skew:</h2>
+  <div class="skew">Hello world!</div>
+</body>
+</html>
