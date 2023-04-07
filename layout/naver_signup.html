@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 : 회원가입</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/naver_signup.css">
+</head>
+<body>
+  <!-- 헤더영역 -->
+  <header>
+    <!-- 가운데 정렬을 위한 inner div -->
+    <div class="top">
+      <!-- h1(강조의 의미) 또는 div를 사용해도 상관없음 -->
+      <h1 class="logo">
+        <a href="">로고자리</a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- 메인 영역 -->
+  <main id="container">
+    <!-- 가운데 정렬을 위한 inner div -->
+    <div class="section-input">
+      <label for="id">아이디</label>
+      <div class="input-group-row">
+        <input type="text" id="id">
+        <span>@naver.com</span>
+      </div>
+      
+      <label for="password">비밀번호</label>
+      <input type="password" name="비밀번호" id="password">
+
+      <label for="password">비밀번호 재확인</label>
+      <input type="password" name="비밀번호 재확인" id="password">
+
+      <label for="name">이름</label>
+      <input type="text" id="name">
+
+      <label for="birthday">생년월일</label>
+      <input class="birthday" type="text" id="birthday" placeholder="년(4자)">
+      <select name="월" id="birthday" aria-placeholder="월">
+        <option value selected>월</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <input class="birthday" type="text" id="birthday" placeholder="일">
+
+      <label for="gender">성별</label>
+      <select name="성별" id="gender">
+        <option value selected>성별</option>
+        <option value="M">남자</option>
+        <option value="F">여자</option>
+        <option value="U">선택 안함</option>
+      </select>
+
+      <label for="email">본인 확인 이메일(선택)</label>
+      <input type="email" name="이메일" id="email" placeholder="선택입력">
+
+      <label for="number">휴대전화</label>
+      <select name="국적" id="number">
+        <option value="82">대한민국 +82</option>
+      </select>
+      <input type="text"  class="number" name="전화번호 입력" id="number" placeholder="전화번호 입력">
+      <button type="button" class="push">인증번호 받기</button>
+      <input type="text" placeholder="인증번호 입력하세요">
+      <br>
+      <br>
+      <button type="button" class="go">가입하기</button>
+      
+
+      <!-- 이 안에 작업하세요 -->
+    </div>
+  </main>
+
+  <!-- 푸터 영역 -->
+  <footer>
+    <!-- 가운데 정렬을 위한 inner div -->
+    <div class="bottom">
+      <div class="bt-menu">
+        <span>이용약관</span>
+        <span>| 개인정보처리방침</span>
+        <span>| 책임의 한계와 법적고지</span>
+        <span>| 회원정보 고객센터</span>
+      </div>
+      <div class="copyright">
+        카피라이트 자리
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* 공통 스타일 */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: Dotum, 돋움, Helvetica, sans-serif;
+  background-color: #f5f6f7;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input, select {
+  width: 100%;
+  height: 51px;
+  border: solid 1px #dadada;
+}
+
+
+/* 헤더영역 */
+header {
+  width: 100%;
+  background-color: rgb(228, 189, 118);
+}
+header .top {
+  max-width: 768px;
+  height: 124px;
+  margin: 0 auto;
+  background-color: ivory;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 메인영역 */
+#container {
+  max-width: 768px;
+  height: 996px;
+  margin: 0 auto;
+  
+  
+}
+
+#container .section-input {
+  width: 460px;
+  margin: 0 auto;
+  
+}
+#container .section-input input {
+  width: 460px;
+  height: 51px;
+  border: solid 1px #dadada;
+
+}
+#container .section-input label {
+  font-size: 12px;
+  display: block;
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+#container .section-input .birthday, select#birthday {
+  width: 150px;
+  height: 51px;
+  border: solid 1px #dadada;
+}
+#container .section-input .input-group-row {
+  position: relative;
+}
+#container .section-input .input-group-row span{
+position: absolute;
+
+top: 17px;
+right: 7px;
+}
+
+#container .section-input .number {
+  width: 300px;
+}
+
+#container .section-input .push{
+  width: 150px;
+  height: 51px;
+  background-color: #03c75a;;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;;
+}
+
+#container .section-input .go {
+  width: 460px;
+  height: 51px;
+  background-color: #03c75a;
+  color: #fff;
+  border: solid 1px rgba(0,0,0,.08);
+}
+
+/* 푸터영역 */
+footer {
+  width: 100%;
+  background-color: rgb(137, 172, 236);
+}
+
+footer .bottom {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: rgb(115, 115, 241);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .bottom .bt-menu{
+
+}
+
