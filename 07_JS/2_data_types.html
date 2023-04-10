@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 데이터 타입 (자료형)
+
+    // String(문자 데이터)
+    // "", '', `` 세가지 방법으로 표기
+    const myName = "Ivory.Gold";
+    const email = 'sakuravely@naver.com';
+    const hello = `hello?!`;
+    const helloName = `hello ${myName}?!`; // 백틱의 장점 - 데이터를 끼워 넣기 편하다
+    const concatString = 'Hello?!' + myName + '?!'; // 백틱 미사용시 데이터 끼워넣기 하려면 플러스 써서 이렇게 해야됨
+
+
+    console.log(myName);
+    console.log(email);
+    console.log(hello);
+    console.log(helloName);
+    console.log(concatString);
+    
+    // Number(숫자 데이터)
+    // 정수 및 부동소수점(실수) 숫자를 나타냄
+    const number = 123;
+    const opacity = 0.57;
+
+    console.log(number)
+    console.log(opacity)
+
+    // Boolean (논리 데이터)
+    // true, false 두 가지 값만 존재
+    // 이분법적으로 구분해야 하는 상황에서 사용 => 조건문/ 반복문에서 조건을 판단할 때
+    let checked = true;
+    let isShow = false;
+
+    console.log(checked);
+    console.log(isShow);
+
+    // undefined
+    // 아무것도 정의되지 않은(값이 할당되지 않은) 상태를 의미
+    // 초기화(값을 넣는 행위)를 하지 않으면 자동으로 undefined가 할당
+    let undef;
+    const obj = { abc: 123 }
+
+    console.log(undef);
+    console.log(obj.abc);
+    console.log(obj.zxc); // 값이 없기 때문에 undefined로 표기된다
+
+    // null
+    // 어떤 값이 의도적으로 비어있음을 의미
+    // undefined와 값이 없다라는 의미는 같지만 null은 개발자가 명시적으로 값이 비어있음을 나타낼 때 사용한다
+    let name = null;
+    console.log(name);
+
+    name = 'Ivory';
+    console.log(name);
+
+    // Object(객체 데이터)
+    // 여러 데이터를 Key-Value 1쌍의 형태로 저장
+    // {}방식을 사용
+    const user = {
+      // Key-Value
+      // 속성(property)
+      name: 'Ivory', // 문자
+      age: 95, // 숫자
+      isMarried: false // 논리
+    };
+
+    console.log(user);
+    // 객체 내부에 특정 데이터만 출력
+    console.log(user.age);
+    console.log(user.isMarried);
+    console.log(user.name);
+
+    // Array(배열 데이터)
+    // 여러 데이터를 순차적으로 저장
+    // [] 방식을 사용
+    // 배열의 인덱스는 0번 부터 시작
+    const fruits = ['apple', 'banana', 'cherry'];
+
+    console.log(fruits[0]);
+    console.log(fruits[1]);
+    console.log(fruits[2]);
+
+    // 다른 종류의 데이터를 포함시킬 수도 있지만, 대부분 같은 종류의 데이터를 나열
+    const arr = ['Ivory', 99, true];
+
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[2]); //보통 이런식으로 쓰진 않는다
+
+    // (참고) 자바스크립트는 매우 유연한 언어: 데이터 타입이 값을 넣는 순간에 결정되고 여러 데이터 타입을 넣을 수 있음
+    let e = 1;
+    console.log(typeof e); //typeof는 데이터 타입을 체크
+    e = 'abc';
+    console.log(typeof e); //typeof는 데이터 타입을 체크
+</script>
+</body>
+</html>
