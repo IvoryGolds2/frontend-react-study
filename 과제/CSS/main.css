@@ -1,4 +1,4 @@
-.inner {
+.headerinner {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -8,23 +8,60 @@
 header {
   width: 100%;
   height: 96px;
-  background-color: #000;
+  background-color: #050505;
 }
 .logo {
   display: block;
   position: absolute;
   left: 0;
-  line-height: 96px;
+  top: 30px;
 }
-.inner > ul {
+.main-menu{
+  display: flex;
+  position: absolute;
+  right: 125px;
+  /* background-color: rgb(0, 255, 106); */
+}
+
+.soso {
   display: block;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 30px;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.menu1 {
+  background-color: rgb(3, 3, 3);
+}
+.mini {
   color: white;
   display: flex;
-  line-height: 96px;
+  width: 110px;
+  height: 30px;
+  justify-content: center;
   text-align: center;
-  position: absolute;
-  left: 300px;
+  margin-top: 25px;
+  display: none;
 }
-.inner > ul >li {
-  padding: 0 40px;
+.main-menu:hover .mini {
+  display: block;
+}
+
+.headerinner > .button {
+  line-height: 96px;
+  position: absolute;
+  right: 2px;
+}
+.headerinner > .button > button {
+  width: 72px;
+  height: 30px;
+    background-color: rgb(255, 213, 220);
+  border: 1px solid pink;
+  border-radius: 45%;
+  cursor: pointer;
+  }
+.headerinner > .button > button a {
+  text-decoration: none;
+  color: #050505;
 }
