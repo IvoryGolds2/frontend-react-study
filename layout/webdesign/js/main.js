@@ -66,4 +66,4 @@ next.addEventListener('click', prevSlide); //다음 이미지 표시
 //   setTimeout(showSlides, 2000); // 2초 마다 showSlides 함수 반복 실행 
 // }
 
-// showSlides(); // 기본적으로 첫 번째 이미지 표시
+// showSlides(); // 기본적으로 첫 번째 이미지 표시 
