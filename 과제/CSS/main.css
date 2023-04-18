@@ -42,23 +42,33 @@ header .main-menu .soso {
   color: rgb(255, 255, 255);
   display: flex;
   width: 110px;
-  height: 30px;
+  height: 10px;
   justify-content: center;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .main-menu > li ul  {
   display: none;
-  background-color: rgb(47, 47, 46);
-  position: relative;
+  position: absolute;
+  top: 70px;
   z-index: 11;
   /* z-index는 포지션 값을 꼭 줘야한다 */
 }
+.main-menu > li .mini1 {
+  height: 90px;
+}
+.main-menu > li .mini2 {
+  height: 270px;
+}
+
+.main-menu li .soso:hover {
+  color: rgb(252, 175, 188);
+  transition: .6s;
+}
 .main-menu > li:hover ul {
   display: block;
-  background-color: #050505;
-
+  background-color: rgb(56, 53, 53);
 }
 
 .headerinner > .button {
@@ -119,4 +129,14 @@ header .main-menu .soso {
   font-size: 30px;
   cursor: pointer;
   opacity: 1;
+}
+/* 메인영역 */
+section .maininner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  height: 1080px;
+  background-color: pink;
 }
