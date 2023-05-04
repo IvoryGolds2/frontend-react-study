@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 오픈 그래프 -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="My MUSE">
+  <meta property="og:title" content="My MUSE">
+  <meta property="og:description" content="뮤지션들의 아지트 마이뮤즈입니다!">
+  <meta property="og:image" content="./IMAGE/오픈그래프.jpg">
+  <meta property="og:url" content="https://mymusee.netlify.app/">
+
+  <!-- 트위터 카드 -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="My MUSE">
+  <meta property="twitter:title" content="My MUSE">
+  <meta property="twitter:description" content="뮤지션들의 아지트 마이뮤즈입니다!">
+  <meta property="twitter:image" content="./IMAGE/오픈그래프.jpg">
+  <meta property="twitter:url" content="https://mymusee.netlify.app/">
+
+  
+  <title>My MUSE</title>
+  <link rel="icon" href="/ms-icon-150x150.png">
+
+
+  <!-- 스타일 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- 구글 웹폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 구글 머티리얼 아이콘 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+  <link rel="stylesheet" href="./CSS/main.css">
+  
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="./JS/youtube.js"></script>
+  <script defer src="./Js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="./IMAGE/마이뮤즈 로고.png" alt="title logo">
+      </a>
+    </div>
+
+    <nav class="navbar">
+      <ul class="main-menu">
+        <li>
+          <a href="">공지 사항</a>
+        </li>
+        <li>
+          <a href="">구인/구직</a>
+          <ul class="sub-menu">
+            <li>오브리</li>
+            <li>라이브 세션</li>
+            <li>레코딩</li>
+            <li>음악 방송</li>
+            <li>레슨</li>
+            <li>가이드</li>
+            <li>그 외</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">아티스트 보기</a>
+          <ul class="sub-menu">
+            <li>성악/보컬</li>
+            <li>건반</li>
+            <li>현악</li>
+            <li>관악</li>
+            <li>타악</li>
+            <li>기타/베이스</li>
+            <li>국악</li>
+            <li>작곡/지휘</li>
+            <li>그 외</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">뮤직 매거진</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="button">
+      <button type="button" class="btn">로그인</button>
+      <button type="button" class="btn">회원가입</button>
+    </div>
+    <a href="#" class="btn-hamburger">
+      <span class="material-icons">menu</span>
+    </a>
+    <a href="#" class="btn-x">
+      <span class="material-icons">close</span>
+    </a>
+  </header>
+  <section class="slides">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./IMAGE/1.jpg" alt="five guitar picture">
+        </div>
+        <div class="swiper-slide">
+          <img src="./IMAGE/2.jpg" alt="string instruments picture">
+        </div>
+        <div class="swiper-slide">
+          <img src="./IMAGE/3.jpg" alt="room picture">
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>                                                                                                                                                                                                                                                                                      
+    </div>
+  </section>
+  <section class="box">
+    <div class="inner">
+      <h2>오늘의 구인/구직</h2>
+      <div class="innerdiv">
+          <ul>
+            <div class="title">라이브 세션</div>
+              <li><p class="multipleStrings1"></p></li>
+          </ul>
+          <ul>
+            <div class="title">오브리</div>
+              <li><p class="multipleStrings2"></p></li>
+          </ul>
+          <ul>
+            <div class="title">가이드 보컬</div>
+            <li><p class="multipleStrings3"></p></li>
+
+          </ul>
+          <ul>
+            <div class="title">레슨</div>
+            <li><p class="multipleStrings4"></p></li>
+          </ul>
+          <ul>
+            <div class="title">음악 방송</div>
+            <li><p class="multipleStrings5"></p></li>
+          </ul>
+          <ul>
+            <div class="title">레코딩</div>
+            <li><p class="multipleStrings6"></p></li>
+          </ul>
+      </div>
+    </div>
+  </section>
+  <section class="major">
+    <div class="inner">
+      <h2>분야별 뮤즈</h2>
+      <div class="innerdiv">
+        <div><img src="./IMAGE/보칼.png" alt=""><br>성악/보컬</div>
+        <div><img src="./IMAGE/피아노.png" alt=""><br>건반</div>
+        <div><img src="./IMAGE/스트링링.png" alt=""><br>현악</div>
+        <div><img src="./IMAGE/관악.png" alt=""><br>관악</div>
+        <div><img src="./IMAGE/타악.png" alt=""><br>타악</div>
+        <div><img src="./IMAGE/국악.png" alt=""><br>국악</div>
+        <div><img src="./IMAGE/그외.png" alt=""><br>그 외</div>
+      </div>
+    </div>
+  </section>
+  <section class="hotmuse">
+    <div class="inner">
+      <h2>Hot MUSE</h2>
+      <div class="innerdiv">
+        <div class="artist">
+          <img src="./IMAGE/현욱.jpg" alt="">
+          <div class="obutton">
+            <button type="button" onclick="showModal('iBpqYgF4si8')">보컬리스트 김현욱
+            </button>
+          </div>
+        </div>
+
+        <div class="artist">
+          <img src="./IMAGE/상아.jpg" alt="">
+          <div class="obutton">
+            <button type="button" onclick="showModal('TuUlkhj3Bio')">첼리스트 상아
+            </button>
+          </div>
+      </div>
+
+        <div class="artist">
+          <img src="./IMAGE/이고도.jpg" alt="">
+          <div class="obutton">
+            <button type="button" onclick="showModal('Qp_DC9dWqa4')">싱어송라이터 이고도
+            </button>
+          </div>
+        </div>
+
+        <div class="artist">
+          <img src="./IMAGE/예이디.jpg" alt="">
+          <div class="obutton">
+            <button type="button" onclick="showModal('cD-Hm7jamSs')">요들러 예이디
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>  
+  </section>
+  <section class="magazine">
+    <div class="inner">
+      <div class="menu">
+        <h3>뮤직 매거진 테마</h3>
+        <ul class="magazinelist">
+          <li class="list1">음악으로 먹고 사는 사람들</li>
+          <li class="list2">나만 몰랐던 예술 지원</li>
+          <li class="list3">슬기로운 음악 생활</li>
+          <li class="list4">음악의 신대륙을 발견하다</li>
+          <li class="list5">지구에서 음악하기</li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="content">
+        <div class="music1">
+          <img src="./IMAGE/버스킹.jpg" alt="">
+          30살에 음악 시작하기
+          <div class="minibox" class="minibox1">
+            음악으로 먹고 사는 사람들
+          </div>
+        </div>
+        <div class="music2">
+          <img src="./IMAGE/공부.jpg" alt="">
+          지원사업 선정 가능성 올리는 방법
+          <div class="minibox">
+            나만 몰랐던 예술 지원
+          </div>
+        </div>
+        <div class="music3">
+          <img src="./IMAGE/풍류도.jpg" alt="">
+          유행은 돌고 돈다.<br>
+          조선의 대중음악이었던 판소리
+          <div class="minibox">
+            슬기로운 음악 생활
+          </div>
+        </div>
+        <div class="music4">
+          <img src="./IMAGE/현미경.jpg" alt="">
+          음 속의 음 미분음을 탐험하자!
+          <div class="minibox">
+            음악의 신대륙을 발견하다
+          </div>
+        </div>
+        <div class="music5">
+          <img src="./IMAGE/유튜브.jpg" alt="">
+          진짜 퇴사하고 유튜브 해본 후기
+          <div class="minibox">
+            지구에서 음악하기
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 재미로 만드는 영역 -->
+  <section class="instruments">
+    <div class="backgroundimg"></div>
+    <div class="instext">악기 소리 들어보기</div>
+    <div class="instrument inst1"><img src="./IMAGE/통기타-removebg-preview.png" alt=""></div>
+
+    <div class="instrument inst2"><img src="./IMAGE/피아노-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst3"><img src="./IMAGE/바이올린-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst4"><img src="./IMAGE/드럼누끼 (1).png" alt=""></div>
+
+
+    <div class="instrument inst5"><img src="./IMAGE/트럼펫누끼.png" alt=""></div>
+
+
+    <div class="instrument inst6"><img src="./IMAGE/가야금-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst7"><img src="./IMAGE/오보에-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst8"><img src="./IMAGE/첼로-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst9"><img src="./IMAGE/태평소-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst10"><img src="./IMAGE/플룻-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst11"><img src="./IMAGE/호른-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst12"><img src="./IMAGE/색소폰-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst13"><img src="./IMAGE/일렉기타-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst14"><img src="./IMAGE/베이스기타-removebg-preview.png" alt=""></div>
+
+
+    <div class="instrument inst15"><img src="./IMAGE/건반-removebg-preview (2).png" alt=""></div>
+
+
+    <audio id="myaudio" autoplay></audio>
+
+  </section>
+  <!-- 푸터영역 -->
+  <footer>
+    <div class="logo"><img src="./IMAGE/my muse.png" alt=""></div>
+    <div class="ftcontent">
+      <ul>
+        <li>이용약관 | 개인정보처리방침</li>
+        <li>공지사항 | 고객센터 | 제휴/광고문의</li>
+        <li>(주)아이보리컴퍼니 대표이사 김상아 인천광역시 미추홀구 인주대로 148</li>
+      </ul>
+      <div class="copyright">Copyright  2023 My Muse. All rights reserved.</div>
+    </div>
+    <div class="icons">
+      <img src="./IMAGE/message.png" alt="">
+      <img src="./IMAGE/pngwing.com.png" alt="">
+    </div>
+  </footer>
+
+  <!-- 모달 -->
+  <div id="modal" class="modal">
+    <div class="cbutton">
+      <button type="button" onclick="hideModal()">x
+      </button>
+    </div>
+    <div class="youtube">
+        <div id="player" class="player"></div>
+    </div>
+  </div>
+</body>
+</html>
