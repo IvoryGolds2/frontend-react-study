@@ -12,19 +12,19 @@
 
     // 풀이5
     // 주의! 덧셈을 하려면 숫자로 변환해 줄 것!!
-    const num1 = prompt('숫자를 입력하세요.', '0');
+    const num1 = Number(prompt('숫자를 입력하세요.', '0'));
     const num2 = prompt('숫자를 입력하세요.', '0');
     const num3 = prompt('숫자를 입력하세요.', '0');
-Number(num1)
+
     let max = Math.max(Number(num1), Number(num2), Number(num3));
     let min = Math.min(Number(num1), Number(num2), Number(num3));
     let sum = (Number(num1) + Number(num2) + Number(num3));
     let avg = sum / 3;
 
-    document.write('최대값은' + max)
-    document.write('최소값은' + min)
-    document.write('합계는' + sum)
-    document.write('평균값은' + avg)
+    document.write('최대값은' + max + '<br>')
+    document.write('최소값은' + min + '<br>')
+    document.write('합계는' + sum + '<br>')
+    document.write('평균값은' + avg + '<br>')
 
   </script>
 </head>
