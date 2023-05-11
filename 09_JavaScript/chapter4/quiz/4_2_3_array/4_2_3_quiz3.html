@@ -13,36 +13,47 @@
     const fruits = ['사과', '바나나', '딸기', '포도', '두리안', '파인애플'];
 
     // 풀이3
-    const xfruit = prompt('먹기 싫은 과일을 입력하세요', '바나나')
+    // const xfruit = prompt('먹기 싫은 과일을 입력하세요', '바나나')
 
     // if (xfruit === fruits[0]) {
     //   frute.splice(0)
     // } if (xfruit === fruits[2]) {
 
     // }
-    switch (xfruit) {
-      case fruits[0]:
-      fruits.splice(0, 1);
-        break;
-      case fruits[1]:
-      fruits.splice(1, 1);
-        break;
-      case fruits[2]:
-      fruits.splice(2, 1);
-        break;
-      case fruits[3]:
-      fruits.splice(3, 1);
-        break;
-      case fruits[4]:
-      fruits.splice(4, 1);
-        break;
-      case fruits[5]:
-      fruits.splice(5, 1);
-        break;
+    // switch (xfruit) {
+    //   case fruits[0]:
+    //   fruits.splice(0, 1);
+    //     break;
+    //   case fruits[1]:
+    //   fruits.splice(1, 1);
+    //     break;
+    //   case fruits[2]:
+    //   fruits.splice(2, 1);
+    //     break;
+    //   case fruits[3]:
+    //   fruits.splice(3, 1);
+    //     break;
+    //   case fruits[4]:
+    //   fruits.splice(4, 1);
+    //     break;
+    //   case fruits[5]:
+    //   fruits.splice(5, 1);
+    //     break;
     
-      default:
-        alert('제거할 과일이 없습니다.');
-        break;
+    //   default:
+    //     alert('제거할 과일이 없습니다.');
+    //     break;
+    // }
+    // document.write(fruits);
+
+    const disliked = prompt('싫어하느 과일은?');
+    const dislikedIndex = fruits.indexOf(disliked);
+    fruits.splice(index, 1);
+
+    if(dislikedIndex === -1) {
+      alert('제거할 과일이 없습니다');
+    } else {
+      fruits.splice(dislikedIndex, 1);
     }
     document.write(fruits);
   </script>

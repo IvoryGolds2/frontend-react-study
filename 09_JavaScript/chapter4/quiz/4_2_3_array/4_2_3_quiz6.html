@@ -15,7 +15,26 @@
     
     // 풀이6
     
-    
+    while (lottoArr.length < 6) {
+      const randomNum = Math.floor(Math.random() * 45) + 1;
+      if (!lottoArr.includes(randomNum)) {
+        lottoArr.push(randomNum);
+      }
+    }
+    document.write(lottoArr.sort(function(a, b) {return a - b;}), '<br>');
+
+    // 풀이 6 - 2
+    // for문 사용
+    const lottoArr2 = []; // 빈 배열
+
+    for (let i = 0; i < 6;) { //식을 꼭 세개 다 쓸 필요는 없음 하지만 이런식으로 쓸거면 while문 쓰는게 나음
+      const randomNum = Math.floor(Math.random() * 45) + 1;
+      if (!lottoArr2.includes(randomNum)) {
+        lottoArr2.push(randomNum);
+        i++;
+      }
+    }
+    document.write(lottoArr2.sort(function(a, b) {return a - b;}), '<br>');
   </script>
 </head>
 <body>
