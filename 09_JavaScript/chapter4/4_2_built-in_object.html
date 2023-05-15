@@ -324,7 +324,12 @@
     const maskSsn = userSsn && userSsn.substring(0, userSsn.length - 6) + '******';
     document.write(maskSsn, '<br>');
 
-    // 사용자로부터 입력받은 이메일 주소 유효성 검사(정규식 안쓰는 경우)
+    // 사용자로부터 입력받은 이메일 주소 유효성 검사(정규식 안쓰는let aa = null;
+let bb;
+let cc = ' ';
+let dd = 4;
+let ee = undefined;
+let ff = aa || bb || cc || dd || ee; 경우
     document.write('<h1>이메일 주소 유효성 검사</h1>')
     const userEmail = prompt('당신의 이메일 주소는?')
     const arrUrl = ['.co,kr', '.com', '.net', '.or.kr', '.go.kr'];
