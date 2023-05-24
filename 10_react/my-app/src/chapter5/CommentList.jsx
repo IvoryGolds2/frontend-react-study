@@ -24,7 +24,7 @@ const comments = [
 function CommentList() {
   return (
     <div>
-      {/* Quiz: props를 추가하여 name과 content값 전달
+      {/* Quiz: props를 추가하여 name과 content값 전달 */}
       <Comment 
         name="Ivory"  // 원래는 {} 하고 적어야 하지만 문자열이라 생략 가능
         content="너무어렵습니다."
@@ -36,7 +36,7 @@ function CommentList() {
       <Comment
         name="라이"
         content="꾸악"
-      /> */}
+      /> 
 
       {/* 배열을 동적으로 렌더링해야 할 떄는 배열의 map()함수를 사용
       (map(): 배열 안에 있는 각 요소를 변환하여 새로운 배열을 만듦)
@@ -47,13 +47,23 @@ function CommentList() {
         );
       })}
 
-      {/* map() 함수의 결과
+      
+      {/* {/* map() 함수의 결과
       {
         [1, 2, 3].map(element => element * 10)
         [10, 20, 30]
+  [{name: 'kimgoni',
+  content: 'hello im goni'},
+  {name: 'ivory',
+  content: 'reactwa muzucasi'},
+  {name: 'rai',
+  content: 'onnajidesu'},
+  {name: 'kira',
+  content: 'onnajidesu'}]
       } */}
     </div>
   );
 }
+
 
 export default CommentList;

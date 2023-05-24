@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Library from './chapter3/Library';
 import Clock from './chapter4/Clock';
-import JsxUse from './chapter3/3.4/JsxUse';
+
 import PropUse from './chapter5/5.3/PropsUse';
 import Comment from './chapter5/Comment';
 import CommentList from './chapter5/CommentList';
