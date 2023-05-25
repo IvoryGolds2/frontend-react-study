@@ -46,24 +46,19 @@ function CommentList() {
           <Comment name={comment.name} content={comment.content}/>
         );
       })}
+      {/* 코드 간소화 */}
+      {comments.map(comment => <Comment name={comment.name} content={comment.content}/>)}
 
-      
-      {/* {/* map() 함수의 결과
-      {
-        [1, 2, 3].map(element => element * 10)
-        [10, 20, 30]
-  [{name: 'kimgoni',
-  content: 'hello im goni'},
-  {name: 'ivory',
-  content: 'reactwa muzucasi'},
-  {name: 'rai',
-  content: 'onnajidesu'},
-  {name: 'kira',
-  content: 'onnajidesu'}]
-      } */}
+
+      {/* map() 함수의 결과 */}
+      {[
+          <Comment name={'kimgoni'} content={'hello im goni'} />,
+          <Comment name={'ivory'} content={'reactwa muzucasi'} />,
+          <Comment name={'rai'} content={'onnajidesu'} />,
+          <Comment name={'kira'} content={'onnajidesu'} />
+      ]}
     </div>
   );
 }
-
 
 export default CommentList;
