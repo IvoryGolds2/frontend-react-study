@@ -27,6 +27,10 @@ import Mailbox from './chapter9/9.3/Mailbox';
 import LoginControlRefactoring from './chapter9/9.2/LoginControl';
 import MainPage from './chapter9/9.4/MainPage';
 import LandingPage from './chapter9/LandingPage';
+import NumberList from './chapter10/10.1/NumberList';
+import ListKex from './chapter10/10.2/ListKey';
+import ListKey from './chapter10/10.2/ListKey';
+import AttendanceBook from './chapter10/AttendanceBook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Root DOM Node에 렌더링 하도록 하는 함수
@@ -67,7 +71,12 @@ root.render(
   // <Mailbox unreadMessages={messages} age={30}/>
   // <LoginControlRefactoring />
   // <MainPage />
-  <LandingPage />
+  // <LandingPage />
+
+  // 10장 예제
+  // <NumberList numbers={[1, 2, 3, 4, 5]} />
+  // <ListKey />
+  <AttendanceBook />
 );
 
 // 4장 예제
