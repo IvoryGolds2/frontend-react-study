@@ -31,6 +31,15 @@ import NumberList from './chapter10/10.1/NumberList';
 import ListKex from './chapter10/10.2/ListKey';
 import ListKey from './chapter10/10.2/ListKey';
 import AttendanceBook from './chapter10/AttendanceBook';
+import NameForm from './chapter11/11.2/NameForm';
+import EssayForm from './chapter11/11.3/EssayForm';
+import FlaverForm from './chapter11/11.3/FlaverForm';
+import TextInputWithFocusButton from './chapter7/7.6/TextInputWithFocusButton';
+import FileInput from './chapter11/11.3/FileInput';
+import ComponentVariable from './chapter7/7.6/ComponentVariable';
+import Reservation from './chapter11/11.4/Reservation';
+import ReservationRecactoring from './chapter11/11.4/ReservationRefactoring';
+import SignUp from './chapter11/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Root DOM Node에 렌더링 하도록 하는 함수
@@ -58,6 +67,8 @@ root.render(
   // <EffectSummary />
   // <EffectContainer />
   // <TimerContainer />
+  // <TextInputWithFocusButton />
+  // <ComponentVariable />
 
   // 8장 예제
   // <Toggle />
@@ -76,7 +87,16 @@ root.render(
   // 10장 예제
   // <NumberList numbers={[1, 2, 3, 4, 5]} />
   // <ListKey />
-  <AttendanceBook />
+  // <AttendanceBook />
+
+  // 11장 예제
+  // <NameForm />
+  // <EssayForm />
+  // <FlaverForm /> 
+  // <FileInput />
+  // <Reservation />
+  // <ReservationRecactoring />
+  <SignUp />
 );
 
 // 4장 예제
