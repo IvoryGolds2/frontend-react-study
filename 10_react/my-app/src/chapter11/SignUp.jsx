@@ -34,30 +34,64 @@ const styles = {
 // 2) 어려우면 일단 각각의 state를 따로 선언해도 되고 객체 형태로 한번에 관리해도 됨
 
 function SignUp(props) {
-  const [name, setName] = useState('');
-  const [gender, setGender] = useState('male');
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
+  // const [name, setName] = useState('');
+  // const [gender, setGender] = useState('male');
+
   
-  const handleGenderChange = (e) => {
-    setGender(e.target.value)
-  }
+  
+  // const handleNameChange = (e) => {
+    //   setName(e.target.value);
+    // };
+    
+    // const handleGenderChange = (e) => {
+      //   setGender(e.target.value)
+      // }
+      
+      const handleSubmit = (e) => {
+        alert(`이름: ${name} 
+        성별: ${gender}`)
+        e.preventDefault();
+      }
+      
+  // 객체 하나로 관리 시 
+  const [inputs, setInputs] = useState({
+    name: '',
+    gender: 'male'
+  });
+  const { name, gender } = inputs;
 
-  const handleSubmit = (e) => {
-    alert(`이름: ${name} 
-    성별: ${gender}`)
-    e.preventDefault();
-  }
+  const handleInputChange = (e) => {
+    const{ name, value } = e.target;
 
+    // 방법1
+    // const copyObj = {
+    //   ...inputs
+    // };
+    // copyObj[name] = value;
+    // setInputs(copyObj)
+
+    // 방법2
+    // setInputs(inputs => {
+    //   return {
+    //     ...inputs, // 기존의 inputs 객체를 복사한 뒤 
+    //     [name]: value // name값을 키로 가진 속성의 값을 value로
+    //   };
+    // });
+    setInputs(inputs => {
+      return {
+        ...inputs, // 기존의 inputs 객체를 복사한 뒤 
+        [name]: value // name값을 키로 가진 속성의 값을 value로
+      };
+    });
+  }
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        <input type="text" style={styles.name} onChange={e => handleNameChange(e)} /> <br />
+        <input type="text" name="name" value={name} style={styles.name} onChange={e => handleInputChange(e)} /> <br />
       </label>
       <label>
-        <select id="gender" style={styles.gender} onChange={e => handleGenderChange(e)}>
+        <select id="gender" name="gender" value={gender} style={styles.gender} onChange={e => handleInputChange(e)}>
           <option value="female">여자</option>
           <option value="male">남자</option>
         </select>
