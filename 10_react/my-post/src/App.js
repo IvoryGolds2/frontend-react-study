@@ -13,6 +13,10 @@ function App() {
   // 서버에서 가져온 데이터라고 가정
   const [posts, setPosts] = useState(['리액트', '자바스크립트', '문법 공부']);
 
+  const [date, setDate] = useState(['2023년1월14일', '1995년12월30일', '1994년1월17일']);
+
+  const [writer, setWriter] = useState('');
+
   const [showPostDetail, setShowPostDetail] = useState(false);
 
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -66,8 +70,9 @@ function App() {
               setCurrentIndex(index);
             }}>
             <h4>{post}</h4>
-            <p>2023년 1월14일</p>
-            <p>by Ivory</p>
+        
+            <p>{date}</p>
+            <p>by {writer}</p>
 
             <hr />
 

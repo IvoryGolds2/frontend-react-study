@@ -7,8 +7,8 @@ console.log(props);
   return (
     <div className='detail'>
       <h4>제목: {posts[currentIndex]}</h4>
-      <p>날짜: 2023년 1월 20일</p>
-      <p>작성자: Ivory.Gold</p>
+      <p>날짜:{}</p>
+      <p>작성자:{}</p>
       <p>...상세내용...</p>
 
       {/* 간단한 포스트 수정하기 */}
