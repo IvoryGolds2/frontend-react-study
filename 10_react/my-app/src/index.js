@@ -54,6 +54,7 @@ import ThemeApp from './chapter15/theme/ThemeApp';
 import MyStyle from './chapter15/MyStyle';
 import ParentComponent from './chapter7/7.5/ParentComponent';
 import SimpleRouter from './chapter16/SimpleRouter';
+import ApiRequest from './chapter17/ApiRequest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Root DOM Node에 렌더링 하도록 하는 함수
@@ -132,7 +133,10 @@ root.render(
   // <MyStyle />
 
   // 16장 예제
-  <SimpleRouter />
+  // <SimpleRouter />
+
+  // 17장 예제
+  <ApiRequest />
 );
 
 // 4장 예제
