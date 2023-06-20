@@ -41,8 +41,9 @@ function PokeItem({poke}) {
   return (
     <PokeItemBlock>
       <h2>
-        
+        {name}
       </h2>
+      <a href={url}>{url}</a>
     </PokeItemBlock>
   );
 }

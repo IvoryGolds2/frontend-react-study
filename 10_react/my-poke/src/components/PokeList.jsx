@@ -10,6 +10,8 @@ const PokeListBlock = styled.div`
   width: 768px;
   margin: 0 auto;
   margin-top: 2rem;
+  /* background-color: pink; */
+
 
   @media screen and (max-width: 768px) {
     width: 100%;
