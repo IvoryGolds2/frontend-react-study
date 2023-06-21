@@ -12,7 +12,7 @@ npx create-react-app my-blog
 
 # 필요한 패키지 설치
 npm install react-router-dom styled-components@5.3.11
-
+npm install react-bootstrap bootstrap styled-components@5.3.11 react-router-dom @reduxjs/toolkit react-redux axios
 # 각 기능에 필요한 컴포넌트
 - 글 목록 보기 기능(리스트 형태)
   - MainPage, PostList, PostListItem (map함수)
