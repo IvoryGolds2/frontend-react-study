@@ -43,7 +43,7 @@ align-items: start;
 `
 
 function WritePhoto(props) {
-  //참고
+  //참고참고우
   // const [posts, setPosts] = useState(dataPhoto)
   // const logInUSerInfo = useSelector(LogInUser)
   // const nextId = useRef(7);
